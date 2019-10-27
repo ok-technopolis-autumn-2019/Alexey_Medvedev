@@ -6,11 +6,12 @@
 }
 
 .task-filter__item {
-    padding: 20px 0 20px 0;
+    padding: 20px 2px 20px 2px;
 }
 
 .task-filter__input {
-    height: 0;
+    position: absolute;
+    left: -9999px;
 }
 
 .task-filter__input:checked ~ .task-filter__text {
@@ -21,6 +22,7 @@
 .task-filter__text {
     border: 1px transparent solid;
     border-radius: 3px;
+    padding: 2px 8px 2px 8px;
 }
 
 .task-clear-completed {

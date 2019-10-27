@@ -1,6 +1,5 @@
 .todo-app {
     position: relative;
-    width: 80%;
     max-width: 560px;
     min-width: 460px;
     margin: 0 auto 20px;
@@ -11,7 +10,7 @@
     position: absolute;
     top: 100%;
     left: 4px;
-    right: 2px;
+    right: 4px;
     height: 5px;
     z-index: -1;
     background-color: #fff;
@@ -23,7 +22,7 @@
     position: absolute;
     top: 100%;
     left: 6px;
-    right: 4px;
+    right: 6px;
     height: 10px;
     z-index: -2;
     background-color: #fff;
@@ -33,7 +32,6 @@
 .todo-app__frame {
     border: 1px #e6e6e6 solid;
     margin: auto;
-    width: 560px;
     background: white;
 }
 
