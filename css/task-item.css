@@ -57,7 +57,7 @@
     padding: 20px 0 20px 0;
 }
 
-.task-item__view:hover .task-item__delete {
+.task-item__delete:focus , .task-item__view:hover .task-item__delete {
     background: url(../images/cross.svg) no-repeat;
     background-position: 0px 16px;
 }
