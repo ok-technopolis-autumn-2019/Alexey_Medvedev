@@ -46,30 +46,18 @@
     font-size: 24px;
     flex-grow: 1;
     word-break: break-word;
-    padding-right: 36px;
-}
-
-.task-item__view:hover .task-item__text {
-    padding-right: 0;
+    padding: 16px 16px 16px 0;
 }
 
 .task-item__delete {
     width: 40px;
     border: none;
     background-color: white;
-    background: url(../images/cross.svg) no-repeat;
     text-indent: -9999px;
-    position: absolute;
-    left: -99999px;
     padding: 20px 0 20px 0;
-    background-position: 0px 16px;
-}
-
-.task-item__delete:focus {
-    position: inherit;
 }
 
 .task-item__view:hover .task-item__delete {
-    position: inherit;
-    padding: 20px 0 20px 0;
+    background: url(../images/cross.svg) no-repeat;
+    background-position: 0px 16px;
 }
