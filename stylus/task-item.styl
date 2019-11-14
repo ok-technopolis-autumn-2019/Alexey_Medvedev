@@ -1,0 +1,57 @@
+@require 'colors.styl'
+
+.task-item
+  &__view
+    border-bottom: 1px $very-light-gray solid
+    display: flex
+    align-items: center
+
+  &__view:hover
+    background-color: $mostly-white
+
+  &__status
+    position: absolute
+    left: -99999px
+
+  &__status-label
+    min-width: 42px
+    min-height: 42px
+    box-sizing: border-box
+    margin: 10px 10px 10px 10px
+    border: 1px $very-light-gray solid
+    border-radius: 50%
+    background-color: $white
+
+  &__status:checked ~ &__text
+    color: $light-gray
+    text-decoration: line-through
+
+
+  &__status:checked + &__status-label
+    background: url(../images/item-check-mark.svg) no-repeat
+    background-position: 8px 8px
+    border-color: $moderate-cyan
+
+  &__status:focus + &__status-label
+    border-color: $light-gray
+
+  &__view:hover &__status:not(:checked) + &__status-label
+    border-color: $light-gray
+
+  &__text
+    font-size: 24px
+    flex-grow: 1
+    word-break: break-word
+    padding: 16px 16px 16px 0
+
+  &__delete
+    width: 40px
+    border: none
+    background-color: white
+    text-indent: -9999px
+    padding: 20px 0 20px 0
+
+    &:focus
+    ^[0]__view:hover  &
+      background: url(../images/cross.svg) no-repeat
+      background-position: 0px 16px
