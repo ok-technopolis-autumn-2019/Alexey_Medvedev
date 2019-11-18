@@ -1,0 +1,59 @@
+@require 'colors.styl'
+
+.todo-app
+  position: relative
+  max-width: 560px
+  min-width: 460px
+  margin: 0 auto 20px
+
+  &:before
+    content: ''
+    position: absolute
+    top: 100%
+    left: 4px
+    right: 4px
+    height: 5px
+    z-index: -1
+    background-color: $white
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+
+  &:after
+    content: ''
+    position: absolute
+    top: 100%
+    left: 6px
+    right: 6px
+    height: 10px
+    z-index: -2
+    background-color: $white
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+
+  &__frame
+    border: 1px $very-light-gray solid
+    margin: auto
+    background: white
+
+
+  &__main-controls
+    display: flex
+    border-bottom: 1px $very-light-gray solid
+    align-items: center
+
+  &__task-list
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+  &__task-item
+    min-height: 64px
+
+
+  &__actions-bar
+    display: flex
+    justify-content: space-between
+    height: 45px
+    align-items: center
+    padding-left: 15px
+    padding-right: 15px
+    color: $dark-gray
+    font-size: 14px
